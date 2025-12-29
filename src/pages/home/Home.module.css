@@ -1,0 +1,29 @@
+.heading {
+    padding-top: 20px;
+}
+
+.serviceCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.serviceCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.featureCard {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition-delay: var(--delay, 0ms); /* ← динамическая задержка */
+}
+
+.featureCard.animate {
+  opacity: 1;
+  transform: translateX(0);
+}

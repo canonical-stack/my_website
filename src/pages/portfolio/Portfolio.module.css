@@ -1,0 +1,10 @@
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fadeInLeft.animate {
+  opacity: 1;
+  transform: translateX(0);
+}

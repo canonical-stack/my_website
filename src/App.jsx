@@ -3,10 +3,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact'; // ← Обратите внимание: Contact, а не Contacts
+import Home from './pages/home/Home';
+import Services from './pages/services/Services';
+import Portfolio from './pages/portfolio/Portfolio';
+// import About from './pages/About';
+// import Contact from './pages/Contact';
 
 import './App.css';
 
@@ -16,9 +17,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} /> {/* ← Используем /contact, а не /contacts */}
+        <Route path="/portfolio" element={<Portfolio />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       <Footer />
     </>
