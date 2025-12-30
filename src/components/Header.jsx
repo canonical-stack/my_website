@@ -60,6 +60,14 @@ const Header = () => {
               </li>
               <li className="nav-item px-lg-4">
                 <Link
+                  className={`nav-link text-uppercase ${isActive('/price') ? 'active' : ''}`}
+                  to="/price"
+                >
+                  Тарифы
+                </Link>
+              </li>
+              <li className="nav-item px-lg-4">
+                <Link
                   className={`nav-link text-uppercase ${isActive('/about') ? 'active' : ''}`}
                   to="/about"
                 >

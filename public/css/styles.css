@@ -10898,8 +10898,10 @@ p {
   color: #e6a756;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 800;
+      color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0.9;
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #e6a756;

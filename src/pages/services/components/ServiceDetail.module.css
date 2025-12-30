@@ -1,0 +1,26 @@
+/* Services.module.css — если есть */
+.service-detail-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.service-detail-content p {
+  margin-bottom: 1rem;
+}
+
+.service-detail-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-detail-content li {
+  margin-bottom: 0.5rem;
+}
+
+.fullDescription {
+  white-space: pre-line;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.05rem;
+}

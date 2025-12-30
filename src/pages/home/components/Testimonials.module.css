@@ -5,6 +5,7 @@
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .testimonialTrack {
@@ -19,10 +20,8 @@
 }
 
 .testimonialCard {
-  background: white;
   border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
@@ -42,8 +41,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.95);
-
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -65,8 +62,8 @@
 }
 
 .slideNav.prev {
-
-  
+      z-index: 99;
+    left: -20px;
 }
 
 .slideNav.next {

@@ -1,28 +1,27 @@
-// src/components/PortfolioItem.jsx
+// src/pages/components/PortfolioItem.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PortfolioItem = ({ project }) => {
   return (
-    <div className="bg-faded rounded h-100 d-flex flex-column">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="img-fluid rounded-top"
-        loading="lazy"
-        style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-      />
-      <div className="p-3 flex-grow-1 d-flex flex-column">
-        <h5 className="mb-2">{project.title}</h5>
-        <p className="text-muted mb-3 flex-grow-1">{project.description}</p>
-        {project.link && (
-          <a
-            href={project.link}
-            className="btn btn-outline-primary mt-auto"
-            style={{ fontSize: '0.9rem' }}
-          >
-            Подробнее
-          </a>
-        )}
+    <div className="card h-100 shadow-sm border-0 rounded">
+      {project.image && (
+        <img
+          src={project.image}
+          className="card-img-top"
+          alt={project.title}
+          style={{ height: '200px', objectFit: 'cover' }}
+        />
+      )}
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title">{project.title}</h5>
+        <p className="card-text text-muted flex-grow-1">{project.shortDescription}</p>
+        <Link
+          to={`/portfolio/${project.id}`}
+          className="btn btn-primary mt-auto"
+        >
+          Подробнее
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,24 @@
+/* src/pages/ProjectDetail.module.css */
+
+.backLink {
+    position: absolute;
+    top: 84px;
+    left: -173px;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+
+
+/* Для мобильных — немного смещаем вниз */
+@media (max-width: 768px) {
+    .backLink {
+        top: -35px;
+        left: 0;
+        font-size: 0.85rem;
+    }
+}

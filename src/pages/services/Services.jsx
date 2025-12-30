@@ -60,6 +60,7 @@ const Services = () => {
               image={service.image}
               title={service.title}
               description={service.description}
+              link={service.link} // ← добавлено
               reverse={index % 2 === 1}
             />
           </div>

@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <>
-      {/* CTA Section — "We're Open" → переименуем в "Свяжитесь с нами" */}
+      {/* CTA Section — "Свяжитесь с нами" */}
       <section className="page-section cta">
         <div className="container">
           <div className="row">
@@ -14,31 +14,17 @@ const Contact = () => {
                   <span className="section-heading-upper">Готовы к сотрудничеству?</span>
                   <span className="section-heading-lower">Свяжитесь с нами</span>
                 </h2>
-                <ul className="list-unstyled list-hours mb-5 text-left mx-auto">
-                  <li className="list-unstyled-item list-hours-item d-flex">
-                    Воскресенье
-                    <span className="ms-auto">Выходной</span>
-                  </li>
-                  <li className="list-unstyled-item list-hours-item d-flex">
-                    Понедельник – Пятница
-                    <span className="ms-auto">9:00 – 18:00</span>
-                  </li>
-                  <li className="list-unstyled-item list-hours-item d-flex">
-                    Суббота
-                    <span className="ms-auto">По предварительной договорённости</span>
-                  </li>
-                </ul>
-                <p className="address mb-5">
+                <p className="address mb-4">
                   <em>
-                    <strong>г. Краснодар, ул. Ленина, 123</strong>
+                    <strong>г. Москва, ул. Тверская, 15</strong>
                     <br />
-                    Бизнес-центр «ТехноПарк», офис 5
+                    Бизнес-центр «Премьер», офис 12
                   </em>
                 </p>
                 <p className="mb-0">
-                  <small><em>Пишите или звоните в любое время</em></small>
+                  <small><em>Пишите или звоните в любое время — ответим в течение часа</em></small>
                   <br />
-                  +7 (861) 256-08-09
+                  +7 (495) 032-77-90
                 </p>
               </div>
             </div>
@@ -46,7 +32,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Форма обратной связи (заглушка) */}
+      {/* Форма обратной связи */}
       <section className="page-section">
         <div className="container">
           <div className="row">
@@ -56,7 +42,7 @@ const Contact = () => {
                   <span className="section-heading-upper">Оставить заявку</span>
                   <span className="section-heading-lower">Обратная связь</span>
                 </h2>
-                <form id="contactForm" /* action можно добавить позже */>
+                <form id="contactForm">
                   <div className="mb-3">
                     <input
                       className="form-control"
